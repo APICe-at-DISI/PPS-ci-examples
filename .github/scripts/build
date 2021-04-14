@@ -1,4 +1,6 @@
 #!/bin/sh
 for repo in *; do
+  cd "$repo"
   ./gradlew build
+  cd ..
 done
