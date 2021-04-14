@@ -1,8 +1,9 @@
 .gradle/
 .idea/
 .settings/
-bin/
-build/
 .project
 .classpath
+bin/
+build/
+out/
 *.kate-swp
