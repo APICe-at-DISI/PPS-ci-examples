@@ -1,0 +1,4 @@
+#!/bin/sh
+for repo in *; do
+  ./gradlew build
+done
