@@ -211,3 +211,5 @@ will produce
 ```
 ![Branching Concepts](http://git-scm.com/figures/18333fig0319-tn.png "Branching Map")
 ```
+
+![Branching Concepts](http://git-scm.com/figures/18333fig0319-tn.png "Branching Map")
