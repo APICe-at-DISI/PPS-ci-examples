@@ -2,6 +2,6 @@
 set -e
 for repo in *; do
   cd "$repo"
-  ./gradlew build
+  ./gradlew check
   cd ..
 done
