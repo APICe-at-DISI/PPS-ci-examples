@@ -32,3 +32,9 @@ jobs:
         uses: DanySK/build-check-deploy-gradle-action@1.2.12
         with:
           working-directory: ${{ matrix.exemplar }}
+  CI-Complete:
+    needs: [Build]
+    runs-on: ubuntu-latest
+    if: ${{ always() && !contains(join(needs.*.status, ','), 'cancelled') }}
+    steps:
+      - run: ${{ !contains(join(needs.*.status, ','), 'failure') }}
