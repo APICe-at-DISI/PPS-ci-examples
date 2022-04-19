@@ -32,6 +32,7 @@ jobs:
         uses: DanySK/build-check-deploy-gradle-action@1.2.12
         with:
           should-run-codecov: false
+          should-validate-wrapper: ${{ matrix.os == 'ubuntu' && matrix.jvm == 11 }}
           working-directory: ${{ matrix.exemplar }}
   CI-Complete:
     needs: [Build]
