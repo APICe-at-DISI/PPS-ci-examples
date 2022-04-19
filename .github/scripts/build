@@ -1,7 +1,0 @@
-#!/bin/sh
-set -e
-for repo in 0*; do
-  cd "$repo"
-  ./gradlew check
-  cd ..
-done
