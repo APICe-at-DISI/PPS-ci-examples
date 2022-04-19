@@ -1,7 +1,7 @@
 plugins {
     java
     scala
-    id("org.scoverage") version "5.0.0"
+    id("org.scoverage") version "7.0.0"
     id("com.github.maiflai.scalatest") version "0.31"
 }
 
