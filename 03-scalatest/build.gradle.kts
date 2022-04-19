@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.scala-lang:scala-library:+")
+    implementation("org.scala-lang:scala-library:2.12.10")
     testImplementation("org.scalatest:scalatest_2.13:+")
     testImplementation("org.scalamock:scalamock_2.13:+")
     testRuntimeOnly("com.vladsch.flexmark:flexmark-profile-pegdown:0.36.8")
