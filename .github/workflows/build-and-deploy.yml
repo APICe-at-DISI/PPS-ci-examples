@@ -31,6 +31,7 @@ jobs:
       - name: Check
         uses: DanySK/build-check-deploy-gradle-action@1.2.12
         with:
+          should-run-codecov: false
           working-directory: ${{ matrix.exemplar }}
   CI-Complete:
     needs: [Build]
