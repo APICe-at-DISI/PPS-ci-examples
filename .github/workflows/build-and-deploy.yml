@@ -36,7 +36,7 @@ jobs:
   CI-Complete:
     needs: [Build]
     runs-on: ubuntu-latest
-    if: ${{ always() && !contains(join(needs.*.result, ','), 'cancelled') }}
+    if: ${{ always() && !contains(join(needs.*.result, ','), 'cancelled') && !contains(join(needs.*.result, ','), 'skipped') }}
     steps:
       - run: echo "jobs resulted in ${{ join(needs.*.result, ',') }}"
       - run: ${{ !contains(join(needs.*.result, ','), 'failure') }}
