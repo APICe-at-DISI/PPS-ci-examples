@@ -37,4 +37,5 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ always() && !contains(join(needs.*.status, ','), 'cancelled') }}
     steps:
+      - run: echo "jobs resulted in ${{ join(needs.*.status, ',') }}"
       - run: ${{ !contains(join(needs.*.status, ','), 'failure') }}
