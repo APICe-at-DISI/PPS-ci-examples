@@ -23,7 +23,7 @@ jobs:
         exemplar: [00-minimal, 01-dependencies, 02-multilang, 03-scalatest, 04-junit]
     runs-on: ${{ matrix.os }}-latest
     concurrency:
-      group: build-${{ github.workflow }}-${{ matrix.os }}-${{ matrix.jvm }}-${{ github.event.number || github.ref }}
+      group: ${{ matrix.exemplar }}-${{ github.workflow }}-${{ matrix.os }}-${{ matrix.jvm }}-${{ github.event.number || github.ref }}
       cancel-in-progress: true
     steps:
       - name: Checkout
