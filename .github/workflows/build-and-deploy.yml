@@ -19,7 +19,7 @@ jobs:
     strategy:
       matrix:
         os: [windows, macos, ubuntu]
-        jvm: [8, 11, 17, 18]
+        jvm: [11, 17, 18]
         exemplar: [00-minimal, 01-dependencies, 02-multilang, 03-scalatest, 04-junit]
     runs-on: ${{ matrix.os }}-latest
     concurrency:
