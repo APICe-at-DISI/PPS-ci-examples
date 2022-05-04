@@ -30,7 +30,7 @@ jobs:
       - name: Checkout
         uses: DanySK/action-checkout@0.2.1
       - name: Check
-        uses: DanySK/build-check-deploy-gradle-action@1.2.14
+        uses: DanySK/build-check-deploy-gradle-action@1.2.15
         with:
           should-run-codecov: false
           should-validate-wrapper: ${{ matrix.os == 'ubuntu' && matrix.jvm == 11 }}
