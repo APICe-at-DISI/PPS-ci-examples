@@ -15,7 +15,6 @@ scoverage {
 
 dependencies {
     val scalaVersion = "3.2.2"
-    val crossWithScala2 = "2.13"
     val (scalaMinor, _) = requireNotNull(Regex("^(\\d+)(\\.\\d+)(\\.\\d+)?$").matchEntire(scalaVersion)).destructured
     // https://mvnrepository.com/artifact/org.scala-lang/scala3-library
     implementation("org.scala-lang:scala3-library_3:${scalaVersion}")
