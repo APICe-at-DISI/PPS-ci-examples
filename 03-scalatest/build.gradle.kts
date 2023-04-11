@@ -1,16 +1,11 @@
 plugins {
     java
     scala
-    id("org.scoverage") version "7.0.1"
     id("com.github.maiflai.scalatest") version "0.32"
 }
 
 repositories {
     mavenCentral()
-}
-
-scoverage {
-    this.scoverageVersion.set("2.0.7")
 }
 
 dependencies {
