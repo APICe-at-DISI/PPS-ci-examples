@@ -16,8 +16,3 @@ dependencies {
     testImplementation("org.scalatest:scalatest_$scalaMinor:3.2.12")
     testRuntimeOnly("com.vladsch.flexmark:flexmark-all:0.64.0")
 }
-
-// Force a scoverage report if check is requested
-tasks.check {
-    dependsOn(tasks.reportScoverage)
-}
