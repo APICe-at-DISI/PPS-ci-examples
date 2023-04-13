@@ -15,7 +15,7 @@ dependencies {
     implementation("org.scala-lang:scala-library:$scalaVersion")
     testImplementation("org.scalatest:scalatest_$scalaMinor:3.3.0-SNAP3")
     testImplementation("org.scalamock:scalamock_$scalaMinor:5.2.0")
-    testRuntimeOnly("com.vladsch.flexmark:flexmark-profile-pegdown:0.36.8")
+    testRuntimeOnly("com.vladsch.flexmark:flexmark-profile-pegdown:0.64.0")
     val scoverageVersion = "1.4.11"
     scoverage("org.scoverage:scalac-scoverage-plugin_$scalaVersion:$scoverageVersion")
     scoverage("org.scoverage:scalac-scoverage-runtime_$scalaMinor:$scoverageVersion")
