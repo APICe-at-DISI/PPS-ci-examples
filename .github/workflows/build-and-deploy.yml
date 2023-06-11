@@ -17,6 +17,7 @@ on:
 jobs:
   Build:
     strategy:
+      fail-fast: false
       matrix:
         exemplar: [00-minimal, 01-dependencies, 02-multilang, 03-scalatest, 04-junit]
         os: [windows, macos, ubuntu]
