@@ -21,7 +21,7 @@ jobs:
       matrix:
         exemplar: [00-minimal, 01-dependencies, 02-multilang, 03-scalatest, 04-junit]
         os: [windows, macos, ubuntu]
-        jvm: [11, 17, 18]
+        jvm: [11, 17, 20]
     runs-on: ${{ matrix.os }}-latest
     concurrency:
       group: ${{ matrix.exemplar }}-${{ github.workflow }}-${{ matrix.os }}-${{ matrix.jvm }}-${{ github.event.number || github.ref }}
