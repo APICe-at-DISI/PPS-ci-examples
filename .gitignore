@@ -1,11 +1,14 @@
+.bloop/
 .gradle/
+.metals/
 .idea/
-.settings/
 .project
-.classpath
+.settings/
+.vscode/
 bin/
 build/
 out/
-*.kate-swp
 
+*.kate-swp
+.classpath
 APIKey
