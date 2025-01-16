@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.scala-lang:scala3-library_3:3.6.2")
+    implementation("org.scala-lang:scala3-library_3:3.6.3")
     val junitVersion = "5.11.4"
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
