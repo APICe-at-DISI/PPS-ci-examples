@@ -10,9 +10,12 @@ repositories {
 
 dependencies {
     implementation("org.scala-lang:scala3-library_3:3.6.4")
-    val junitVersion = "5.11.4"
-    testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
+    // The BOM (Bill of Materials) synchronizes all the versions of Junit coherently.
+    testImplementation(platform("org.junit:junit-bom:5.12.1"))
+    // The annotations, assertions and other elements we want to have access to when compiling our tests.
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    // The engine that must be available at runtime to run the tests.
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 // Enables JUnit Platform (needed for JUnit 5)
