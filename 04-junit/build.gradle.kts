@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.scala-lang:scala3-library_3:3.7.0")
+    implementation("org.scala-lang:scala3-library_3:3.7.1")
     // The BOM (Bill of Materials) synchronizes all the versions of Junit coherently.
     testImplementation(platform("org.junit:junit-bom:5.13.0"))
     // The annotations, assertions and other elements we want to have access to when compiling our tests.
