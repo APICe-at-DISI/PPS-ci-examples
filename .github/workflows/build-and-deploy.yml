@@ -32,7 +32,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Checkout
-        uses: DanySK/action-checkout@0.2.22
+        uses: DanySK/action-checkout@0.2.23
       - name: Check
         uses: DanySK/build-check-deploy-gradle-action@4.0.3
         env:
