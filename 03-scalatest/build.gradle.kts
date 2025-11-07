@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    val scalaVersion = "3.7.3"
+    val scalaVersion = "3.7.4"
     val (scalaMinor, _) = requireNotNull(Regex("^(\\d+)(\\.\\d+)(\\.\\d+)?$").matchEntire(scalaVersion)).destructured
     // https://mvnrepository.com/artifact/org.scala-lang/scala3-library
     implementation("org.scala-lang:scala3-library_3:${scalaVersion}")
