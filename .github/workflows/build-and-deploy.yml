@@ -34,7 +34,7 @@ jobs:
       - name: Checkout
         uses: DanySK/action-checkout@0.2.27
       - name: Check
-        uses: DanySK/build-check-deploy-gradle-action@4.0.14
+        uses: DanySK/build-check-deploy-gradle-action@4.0.15
         env:
           OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
         with:
