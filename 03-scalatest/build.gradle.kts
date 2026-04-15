@@ -4,6 +4,13 @@ plugins {
     id("com.github.maiflai.scalatest") version "0.33"
 }
 
+tasks.withType<ScalaCompile>().configureEach {
+    scalaCompileOptions.additionalParameters = listOf(
+        "-Xunchecked-java-output-version",
+        JavaVersion.current().majorVersion,
+    )
+}
+
 repositories {
     mavenCentral()
 }
