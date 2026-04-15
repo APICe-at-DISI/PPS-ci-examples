@@ -4,12 +4,19 @@ plugins {
     id("com.github.maiflai.scalatest") version "0.33"
 }
 
+tasks.withType<ScalaCompile>().configureEach {
+    scalaCompileOptions.additionalParameters = listOf(
+        "-Xunchecked-java-output-version",
+        JavaVersion.current().majorVersion,
+    )
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    val scalaVersion = "3.7.4"
+    val scalaVersion = "3.8.3"
     val (scalaMinor, _) = requireNotNull(Regex("^(\\d+)(\\.\\d+)(\\.\\d+)?$").matchEntire(scalaVersion)).destructured
     // https://mvnrepository.com/artifact/org.scala-lang/scala3-library
     implementation("org.scala-lang:scala3-library_3:${scalaVersion}")
