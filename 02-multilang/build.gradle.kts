@@ -2,7 +2,7 @@ plugins {
     java
     scala
     groovy
-    kotlin("jvm") version "2.4.0"
+    kotlin("jvm") version "2.4.10"
 }
 repositories {
     mavenCentral()
